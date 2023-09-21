@@ -1,0 +1,62 @@
+.home {
+  height: 100vh;
+}
+
+.modal {
+	margin: 75px auto;
+  &-header {
+    background-color: #9fdcfc;
+  }
+}
+
+// Loader
+.loader {
+	&-border {
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		border: 0.25em solid currentcolor;
+		border-right-color: transparent;
+		border-radius: 50%;
+		animation: 0.75s linear infinite animate;
+	}
+	
+	&-sm {
+		width: 25px !important;
+		height: 25px !important;
+	}
+	
+	&-position {
+		position: fixed;
+		left: 48%;
+		top: 55%;
+	}
+}
+
+.btn {
+	color: $white;
+	padding: 10px 24px !important;
+	font-size: 18px;
+	&:hover {
+			color: $white
+		}
+  &.secondary {
+    background-color: $orange;
+  }
+
+  &.primary {
+    background-color: $purple;
+  }
+
+  &.close-color {
+    background: $white;
+    color: $purple;
+    border-color: $purple;
+  }
+}
+
+@keyframes animate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
